@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="attendanceBot">
+  <head>
+    <meta charset="utf-8">
+    <title>Attendance Home</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/HeadersController.js"></script>
+    <script src="controllers/TeachersController.js"></script>
+    <script src="controllers/StudentsController.js"></script>
+    <script src="services/StudentsFactory.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div ui-view="header"></div>
+      <div ui-view="home"></div>
+      <div ui-view="body"></div>
+    </div>
+  </body>
+</html>
